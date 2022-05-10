@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   border-radius: 12px;
-  background-color: ${({ theme }) => theme.bg1};
+  background-color: #00000057;
   padding: 6px 8px;
   margin-right: 12px;
 
@@ -41,7 +41,7 @@ const LogoWrapper = styled.img`
 `
 
 const FlyOut = styled.div`
-  background-color: ${({ theme }) => theme.bg1};
+  background-color: #00000057;
   position: absolute;
   top: 40px;
   left: 0;

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { darken } from 'polished'
 import styled from 'styled-components'
-import LogoDark from '../../assets/svg/logo_white.svg'
+import LogoDark from '../../assets/logo.svg'
 import Menu from '../Menu'
 import Row, { RowFixed, RowBetween } from '../Row'
 import SearchSmall from 'components/Search'
@@ -26,7 +26,7 @@ const HeaderFrame = styled.div`
   z-index: 2;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-  background-color: ${({ theme }) => theme.bg0};
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(21, 25, 140) 0%, rgb(24, 78, 232) 50%, rgb(21, 26, 141) 100%);
 
   @media (max-width: 1080px) {
     grid-template-columns: 1fr;
@@ -106,7 +106,7 @@ const StyledNavLink = styled(NavLink).attrs({
 
   &.${activeClassName} {
     border-radius: 12px;
-    background-color: ${({ theme }) => theme.bg2};
+    background-color: #00000047;
     color: ${({ theme }) => theme.text1};
   }
 
@@ -162,7 +162,7 @@ export default function Header() {
       <HeaderRow>
         <Title to={networkPrefix(activeNewtork)}>
           <UniIcon>
-            <img width={'24px'} src={LogoDark} alt="logo" />
+            <img width={'96px'} src={LogoDark} alt="logo" />
           </UniIcon>
         </Title>
         <HeaderLinks>

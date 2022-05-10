@@ -8,7 +8,7 @@ import Polling from './Polling'
 
 const Wrapper = styled.div`
   width: 100%;
-  background-color: ${({ theme }) => theme.black};
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(17, 19, 66) 0%, rgb(13, 43, 130) 50%, rgb(3, 5, 53) 100%);
   padding: 10px 20px;
 `
 

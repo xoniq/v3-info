@@ -27,7 +27,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled(Row)`
-  background-color: ${({ theme }) => theme.black};
+  background-color: #00000057;
   padding: 10px 16px;
   width: 500px;
   height: 38px;

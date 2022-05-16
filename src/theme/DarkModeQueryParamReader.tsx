@@ -17,7 +17,7 @@ export default function DarkModeQueryParamReader({ location: { search } }: Route
       ignoreQueryPrefix: true,
     })
 
-    const theme = parsed.theme
+    const theme = 'light' //parsed.theme
 
     if (typeof theme !== 'string') return
 

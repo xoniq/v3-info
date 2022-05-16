@@ -40,7 +40,7 @@ export function colors(darkMode: boolean): Colors {
     black,
 
     // text
-    text1: darkMode ? '#FFFFFF' : '#000000',
+    text1: darkMode ? '#171e93' : '#000000',
     text2: darkMode ? '#C3C5CB' : '#565A69',
     text3: darkMode ? '#FFFFFF91' : '#888D9B',
     text4: darkMode ? '#565A69' : '#C3C5CB',
@@ -49,8 +49,8 @@ export function colors(darkMode: boolean): Colors {
     // backgrounds / greys
     bg0: darkMode ? '#191B1F' : '#F7F8FA',
     bg1: darkMode ? '#1F2128' : '#FFFFFF',
-    bg2: darkMode ? '#2C2F36' : '#F7F8FA',
-    bg3: darkMode ? '#40444F' : '#EDEEF2',
+    bg2: darkMode ? '#00000033' : '#F7F8FA',
+    bg3: darkMode ? '#00000033' : '#EDEEF2',
     bg4: darkMode ? '#565A69' : '#CED0D9',
     bg5: darkMode ? '#6C7284' : '#888D9B',
 
@@ -253,6 +253,6 @@ body {
   min-height: 100vh;
   background-position: 0 -30vh;
   background-repeat: no-repeat;
-
+  background: #fff url(https://safeswap.online/Background.png);
 }
 `

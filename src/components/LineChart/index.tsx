@@ -15,8 +15,10 @@ const Wrapper = styled(Card)`
   width: 100%;
   padding: 1rem;
   display: flex;
-  background-color: ${({ theme }) => theme.bg0}
+  background-color: white;
+  color: black;
   flex-direction: column;
+  box-shadow: rgb(54 102 255 / 20%) 0px 4px 8px 0px, rgb(54 102 255 / 19%) 0px 6px 20px 0px;
   > * {
     font-size: 1rem;
   }
@@ -145,7 +147,7 @@ const LineChart = ({
       const series = chartCreated.addAreaSeries({
         lineColor: color,
         topColor: darken(0.36, color),
-        bottomColor: theme.bg0,
+        bottomColor: '#ffffff',
         lineWidth: 2,
         priceLineVisible: false,
       })
@@ -183,7 +185,7 @@ const LineChart = ({
         }
       })
     }
-  }, [chartCreated, color, currentValue, data, height, setLabel, setValue, theme.bg0])
+  }, [chartCreated, color, currentValue, data, height, setLabel, setValue, '#ffffff'])
 
   return (
     <Wrapper minHeight={minHeight}>

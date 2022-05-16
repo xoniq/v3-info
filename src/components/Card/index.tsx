@@ -25,7 +25,9 @@ export const GreyCard = styled(Card)`
 `
 
 export const DarkGreyCard = styled(Card)`
-  background-color: ${({ theme }) => theme.bg0};
+  background-color: white;
+  color: black;
+  box-shadow: rgb(54 102 255 / 20%) 0px 4px 8px 0px, rgb(54 102 255 / 19%) 0px 6px 20px 0px;
 `
 
 export const OutlineCard = styled(Card)`

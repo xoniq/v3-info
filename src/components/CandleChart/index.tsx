@@ -13,8 +13,10 @@ const Wrapper = styled(Card)`
   width: 100%;
   padding: 1rem;
   display: flex;
-  background-color: ${({ theme }) => theme.bg0}
+  background-color: white;
+  color: black;
   flex-direction: column;
+  box-shadow: rgb(54 102 255 / 20%) 0px 4px 8px 0px, rgb(54 102 255 / 19%) 0px 6px 20px 0px;
   > * {
     font-size: 1rem;
   }
@@ -165,7 +167,7 @@ const CandleChart = ({
         }
       })
     }
-  }, [chartCreated, color, data, height, setValue, setLabel, theme.bg0])
+  }, [chartCreated, color, data, height, setValue, setLabel, '#ffffff'])
 
   return (
     <Wrapper minHeight={minHeight}>
